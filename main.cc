@@ -1,23 +1,11 @@
-# Hash Set
+/* Copyright (c) 2015 Brian R. Bondy. Distributed under the MPL2 license.
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-[![Build Status](https://travis-ci.org/bbondy/hashset-cpp.svg?branch=master)](https://travis-ci.org/bbondy/hashset-cpp)
-
-Implements a simple HashSet for strings in environments where you don't have the std lib available.
-You should probably not be using this. Instead consider using `hash_set` which is a more generic implementation with templates.
-This is only useful for very specific use cases having specific memory layout requirements.
-
-## Setup
-
-```
-npm install --save hashset-cpp
-```
-
-## Sample
-
-```c++
 #include <iostream>
-#include "hash_set.h"
-#include "test/example_data.h"
+#include "./hash_set.h"
+#include "./test/example_data.h"
 
 using std::cout;
 using std::endl;
@@ -48,32 +36,3 @@ int main(int argc, char **argv) {
   delete[] buffer;
   return 0;
 }
-```
-
-## Build everything in release
-
-```
-make
-```
-
-## Running sample
-
-```
-make sample
-```
-
-## Running tests
-
-```
-make test
-```
-
-## Clearing build files
-```
-make clean
-```
-
-## Linting
-```
-npm run lint
-```
