@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/bbondy/hashset-cpp.git"
   },
-  "author": "Huy Nguyen <huynq.cntt@gmail.com>",
+  "author": "Brian R. Bondy <netzen@gmail.com> (http://www.brianbondy.com)",
   "license": "MPL-2.0",
   "gypfile": true,
   "bugs": {
